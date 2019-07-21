@@ -29,7 +29,7 @@ Then even if the word “ecstatic” does not appear in your small training set,
 
 6. When learning word embeddings, we create an artificial task of estimating P(target \mid context)P(target∣context). It is okay if we do poorly on this artificial prediction task; the more important by-product of this task is that we learn a useful set of word embeddings.
 
-	False
+	True
 
 7. In the word2vec algorithm, you estimate P(t \mid c)P(t∣c), where tt is the target word and cc is a context word. How are tt and cc chosen from the training set? Pick the best answer.
 
@@ -46,7 +46,7 @@ Which of these statements are correct? Check all that apply.
 min∑10,000i=1∑10,000j=1f(Xij)(θTiej+bi+b′j−logXij)2
 Which of these statements are correct? Check all that apply.
 
-	θi and ej hould be initialized to 0 at the beginning of training.
+	01 and ej should be initialized randomly at the beginning of training.
 	Xij is the number of times word i appears in the context of word j.
 	The weighting function f(.)f(.) must satisfy f(0) = 0f(0)=0.
 
